@@ -1,0 +1,26 @@
+#labels Featured
+If you are creating your own images you'd probably like to know what size they should be.  That is what this list seeks to provide.
+
+
+== Carrier Images ==
+Height: 20px
+Width: Variable as needed
+Resolution: 72ppi
+
+Notes: Save the image that will look good on a black background as mycarrier.png, and the one that looks good on white background as mycarrier-1.png.
+
+== Badge Images ==
+Height: 30px
+Width: 29px
+Res: 72ppi
+
+== Hud Images ==
+Height: 160px
+Width: 160px
+Res: 72ppi
+
+== Ring / Mute / Silent / Speaker ==
+Height: 88px
+Width: 87px
+Res: 72ppi
+ 
