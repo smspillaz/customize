@@ -1,6 +1,8 @@
 #labels Featured
 If you are creating your own images you'd probably like to know what size they should be.  That is what this list seeks to provide.
 
+== Naming Notes ==
+Image names cannot contain dashes "-" other than to group two images together in a set, ie. CarrierImages.  The dash has a special meaning and will break if used other than what it is intended for.
 
 == Carrier Images ==
 Height: 20px
@@ -23,4 +25,5 @@ Res: 72ppi
 Height: 88px
 Width: 87px
 Res: 72ppi
+ 
  
