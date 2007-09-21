@@ -11,6 +11,13 @@ Resolution: 72ppi
 
 Notes: Save the image that will look good on a black background as mycarrier.png, and the one that looks good on white background as mycarrier-1.png.
 
+== Battery Images ==
+Height: 129px
+Width: 264px
+Res: 72ppi
+
+Notes: The battery image set consists of 17 images, named yourname.png, yourname-1.png, ..., yourname-16.png.  Because I think it would look better (you'll see) yourname.png is _actually_ the 17th image, and all the other numbers correspond.
+
 == Badge Images ==
 Height: 30px
 Width: 29px
@@ -25,6 +32,7 @@ Res: 72ppi
 Height: 88px
 Width: 87px
 Res: 72ppi
+ 
  
  
  
