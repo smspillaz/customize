@@ -20,15 +20,15 @@ Width: 20px
 
 Notes:  The WiFi image set consists of 8 images as follows:
 
-|| Your File Name || Description || Intended Background Color
-|| yourfile.png || No Signal || White
-|| yourfile-1.png || one "bar" || White
-|| yourfile-2.png || two "bars" || White
-|| yourfile-3.png || full "bars" || White
-|| yourfile-4.png || No Signal || Black
-|| yourfile-5.png || one "bar" || Black
-|| yourifle-6.png || two "bars" || Black
-|| yourfile-7.png || full "bars" || Black
+|| Your File Name || Description || Intended Background Color ||
+|| yourfile.png || No Signal || White ||
+|| yourfile-1.png || one "bar" || White ||
+|| yourfile-2.png || two "bars" || White ||
+|| yourfile-3.png || full "bars" || White ||
+|| yourfile-4.png || No Signal || Black ||
+|| yourfile-5.png || one "bar" || Black ||
+|| yourifle-6.png || two "bars" || Black ||
+|| yourfile-7.png || full "bars" || Black ||
 
 
 == Badge Images ==
@@ -57,4 +57,5 @@ Notes: The sound image set consists of four images whose names are described her
 
 
 
+ 
  
