@@ -4,35 +4,57 @@ If you are creating your own images you'd probably like to know what size they s
 == Naming Notes ==
 Image names cannot contain dashes "-" other than to group two images together in a set, ie. CarrierImages below.  The dash has a special meaning and will break if used other than what it is intended for.
 
+== Dock Background Images ==
+Height: 91px
+Width: 320px
+
 == Carrier Images ==
 Height: 20px
 Width: Variable as needed
-Resolution: 72ppi
 
 Notes: Save the image that will look good on a black background as mycarrier.png, and the one that looks good on white background as mycarrier-1.png.
 
-== Battery Images ==
-Height: 129px
-Width: 264px
-Res: 72ppi
+== WiFi Images ==
+Height: 20px
+Width: 20px
 
-Notes: The battery image set consists of 17 images, named yourname.png, yourname-1.png, ..., yourname-16.png.  Because I think it would look better (you'll see) yourname.png is _actually_ the 17th image, and all the other numbers correspond.
+Notes:  The WiFi image set consists of 8 images as follows:
+
+|| Your File Name || Description || Intended Background Color
+|| yourfile.png || No Signal || White
+|| yourfile-1.png || one "bar" || White
+|| yourfile-2.png || two "bars" || White
+|| yourfile-3.png || full "bars" || White
+|| yourfile-4.png || No Signal || Black
+|| yourfile-5.png || one "bar" || Black
+|| yourifle-6.png || two "bars" || Black
+|| yourfile-7.png || full "bars" || Black
+
 
 == Badge Images ==
 Height: 30px
 Width: 29px
-Res: 72ppi
 
-== Hud Images ==
-Height: 160px
-Width: 160px
-Res: 72ppi
+== Bar Dialer Image ==
+See [http://www.hacktheiphone.com/iphone_change_keypad_background_image.html This Tutorial] for information on how to create a custom keypad dialer.
 
-== Ring / Mute / Silent / Speaker ==
+== Battery Images ==
+Height: 129px
+Width: 264px
+
+Notes: The battery image set consists of 17 images, named yourname.png, yourname-1.png, ..., yourname-16.png.  Because I think it would look better (you'll see) yourname.png is _actually_ the 17th image, and all the other numbers correspond.
+
+== Sound Images ==
 Height: 88px
 Width: 87px
-Res: 72ppi
- 
- 
- 
+
+Notes: The sound image set consists of four images whose names are described here:
+
+|| yourname.png || Ring Image ||
+|| yourname-1.png || Mute Image ||
+|| yourname-2.png || Silent Image ||
+|| yourname-3.png || Speaker Image ||
+
+
+
  
