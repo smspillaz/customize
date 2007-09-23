@@ -12,7 +12,7 @@ Width: 320px
 Height: 20px
 Width: Variable as needed
 
-Notes: Save the image that will look good on a black background as mycarrier.png, and the one that looks good on white background as mycarrier-1.png.
+Notes: Save the image that will look good on a black background as mycarrier.png, and the one that looks good on white background as mycarrier-1.png.  I have had good results using Arial font for this graphic.
 
 == WiFi Images ==
 Height: 20px
@@ -57,5 +57,6 @@ Notes: The sound image set consists of four images whose names are described her
 
 
 
+ 
  
  
