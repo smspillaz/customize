@@ -1,6 +1,8 @@
 This wiki defines how files are named for each of the switching funtions.
 
-*HEADER BATTERY
+*Ignore the ? Marks
+
+== HEADER BATTERY ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
 || FSO_BatteryBG.png || xxx.png ||
@@ -14,7 +16,7 @@ This wiki defines how files are named for each of the switching funtions.
 || Default_BatteryInsides.png || xxx-8.png ||
 || Default_BatteryLowBG.png || xxx-9.png ||
 
-*NOTEPAD*
+== NOTEPAD ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
 || arrow left.png || xxx.png ||
@@ -42,7 +44,7 @@ This wiki defines how files are named for each of the switching funtions.
 || trash lid.png || xxx-22.png ||
 || trash.png || xxx-23.png ||
 
-*WEATHER ICONS*
+== WEATHER ICONS ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
 || clouds.png || xxx.png ||
@@ -107,7 +109,7 @@ This wiki defines how files are named for each of the switching funtions.
 || snow.png || xxx-59.png ||
 || sun.png || xxx-60.png ||
 
-*WEATHER BACKGROUNDS*
+== WEATHER BACKGROUNDS ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
 || weather_day_bkgd.png || xxx.png ||
