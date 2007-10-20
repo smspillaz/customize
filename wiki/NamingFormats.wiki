@@ -5,16 +5,16 @@ This wiki defines how files are named for each of the switching funtions.
 == HEADER BATTERY ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
-|| FSO_BatteryBG.png || xxx.png ||
-|| FSO_BatteryCharged.png || xxx-1.png ||
-|| FSO_BatteryCharging.png || xxx-2.png ||
-|| FSO_BatteryInsides.png || xxx-3.png ||
-|| FSO_BatteryLowBG.png || xxx-4.png ||
-|| Default_BatteryBG.png || xxx-5.png ||
-|| Default_BatteryCharged.png || xxx-6.png ||
-|| Default_BatteryCharging.png || xxx-7.png ||
-|| Default_BatteryInsides.png || xxx-8.png ||
-|| Default_BatteryLowBG.png || xxx-9.png ||
+|| !FSO_BatteryBG.png || xxx.png ||
+|| !FSO_BatteryCharged.png || xxx-1.png ||
+|| !FSO_BatteryCharging.png || xxx-2.png ||
+|| !FSO_BatteryInsides.png || xxx-3.png ||
+|| !FSO_BatteryLowBG.png || xxx-4.png ||
+|| !Default_BatteryBG.png || xxx-5.png ||
+|| !Default_BatteryCharged.png || xxx-6.png ||
+|| !Default_BatteryCharging.png || xxx-7.png ||
+|| !Default_BatteryInsides.png || xxx-8.png ||
+|| !Default_BatteryLowBG.png || xxx-9.png ||
 
 == NOTEPAD ==
 || *Original file Name* || *Rename To* ||
