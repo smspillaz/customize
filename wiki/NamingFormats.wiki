@@ -6,7 +6,7 @@ This wiki defines how files are named for each of the switching funtions.
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
 || FSO_BatteryBG.png || xxx.png ||
-|| FSO_Battery!Charged.png || xxx-1.png ||
+|| FSO_BatteryCharged.png || xxx-1.png ||
 || FSO_BatteryCharging.png || xxx-2.png ||
 || FSO_BatteryInsides.png || xxx-3.png ||
 || FSO_BatteryLowBG.png || xxx-4.png ||
