@@ -5,8 +5,8 @@ This wiki defines how files are named for each of the switching funtions.
 == HEADER BATTERY ==
 || *Original file Name* || *Rename To* ||
 || Theme Preview || xxx-preview.png ||
-|| FSO_!BatteryBG.png || xxx.png ||
-|| FSO_!BatteryCharged.png || xxx-1.png ||
+|| FSO_BatteryBG.png || xxx.png ||
+|| FSO_BatteryCharged.png || xxx-1.png ||
 || FSO_BatteryCharging.png || xxx-2.png ||
 || FSO_BatteryInsides.png || xxx-3.png ||
 || FSO_BatteryLowBG.png || xxx-4.png ||
