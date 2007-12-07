@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+                       "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>SectionList</key>
+        <array>
+			<array>
+                <dict>
+                    <key>dockChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Dock Background</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/dock.png</string>
+                    </dict>
+                </dict>
+            	<dict>
+                    <key>presetLoaderView</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Icon Display Order</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/rsbt.png</string>
+                    </dict>
+                </dict>
+            </array>
+			<array>
+                <dict>
+                    <key>carrierChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Carrier Image</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/carrier.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>wifiChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>WiFi Images</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/wifi.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>barsChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Bars Images</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/bars.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>edgeChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Edge Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/edge.png</string>
+                    </dict>                                                                 
+                </dict>                
+                <dict>
+                    <key>airplaneChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Airplane Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/airplane.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>alarmChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Alarm Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/alarm.png</string>
+                    </dict>
+                </dict> 
+                <dict>
+                    <key>bluetoothChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Bluetooth Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/bluetooth.png</string>
+                    </dict>
+                </dict>      
+                <dict>
+                    <key>headerbatteryChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Header Battery Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/headerbattery.png</string>
+                    </dict>
+                </dict>                   
+                <dict>
+                    <key>lockChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Lock Icon</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/lock.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>loadingChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Loading Image</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/loading.png</string>
+                    </dict>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>badgeChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Badge Graphic</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/badge.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>batteryChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Battery Images</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/battery.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>soundChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Sound Images</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/ring.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>hudChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Hud Image</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/hud.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>keypadChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Keypad Artwork</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/keypad.png</string>
+                    </dict>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>chat1Chooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Chat Balloon 1</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/chat1.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>chat2Chooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Chat Balloon 2</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/chat2.png</string>
+                    </dict>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>mainSliderChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Main Slider</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/mainSlider.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>powerSliderChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Power Slider</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/powerSlider.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>callSliderChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Call Slider</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/callSlider.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>maskSliderChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Highlight Mask</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/sliderMask.png</string>
+                    </dict>
+                </dict>
+								<dict>
+                    <key>incallglowChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>In Call Glow</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/incallglow.png</string>
+                    </dict>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>audioSelectionView</key>
+                    <dict>
+                        <key>name</key>
+                        <string>System Sounds</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/notes.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>sbStringsEditor</key>
+                    <dict>
+                        <key>name</key>
+                        <string>SpringBoard Strings</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/apple.png</string>
+                    </dict>
+                </dict>
+            </array>
+            <array>
+                <dict>
+                    <key>calculatorChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Calculator</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/calculator.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>calculatorLCDChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>CalculatorLCD</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/calculatorlcd.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>weathericonChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Weather Icons</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/weather.png</string>
+                    </dict>
+                </dict>
+                <dict>
+                    <key>weatherbackgroundChooser</key>
+                    <dict>
+                        <key>name</key>
+                        <string>Weather Background</string>
+                        <key>iconPath</key>
+                        <string>/Applications/Customize.app/icons/weatherbackground.png</string>
+                    </dict>
+                </dict>
+            </array>
+        </array>
+    </dict>
+</plist>

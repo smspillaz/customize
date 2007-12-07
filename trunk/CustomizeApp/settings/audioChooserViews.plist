@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+                       "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>unlockSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Unlock</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/unlock.caf</string>
+		</dict>
+		<key>receivedSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Received Msg</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/ReceivedMessage.caf</string>
+		</dict>
+		<key>sentSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Sent Msg</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/SentMessage.caf</string>
+		</dict>
+		<key>voicemailSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Voicemail</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/Voicemail.caf</string>
+		</dict>
+		<key>alarmSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Alarm</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/alarm.caf</string>
+		</dict>
+		<key>beepBeepSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Beep Beep</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/beep-beep.caf</string>
+		</dict>
+		<key>lockSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Lock</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/lock.caf</string>
+		</dict>
+		<key>lowPowerSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Low Power</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/low_power.caf</string>
+		</dict>
+		<key>mailSentSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Mail Sent</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/mail-sent.caf</string>
+		</dict>
+		<key>newMailSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>New Mail</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/new-mail.caf</string>
+		</dict>
+		<key>photoSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>Photo Shutter</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/photoShutter.caf</string>
+		</dict>
+		<key>smsReceivedSoundChooser</key>
+        <dict>
+            <key>HeaderName</key>
+            <string>SMS Received</string>
+			<key>AlternateSoundFilesPath</key>
+			<string>/var/root/Library/Customize/AudioFiles</string>
+			<key>StockSoundFilePath</key>
+			<string>/System/Library/Audio/UISounds/sms-received.caf</string>
+		</dict>
+	</dict>
+</plist>

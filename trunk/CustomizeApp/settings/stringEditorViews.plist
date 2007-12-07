@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   
+   <key>sbStringsEditor</key>
+   <dict>
+      <key>stringsPath</key>
+      <string>/System/Library/CoreServices/SpringBoard.app/English.lproj/SpringBoard.strings</string>
+      <key>backupStringsPath</key>
+      <string>/var/root/Library/Customize/StringsBackup/SpringBoard.strings</string>
+      <key>headerName</key>
+      <string>SB Strings</string>
+      <key>mode</key>
+      <integer>1</integer>
+      <key>keyList</key>
+      <array>
+         <string>TEXT_MESSAGE</string>
+         <string>AWAY_LOCK_LABEL</string>
+         <string>REDIAL</string>
+         <string>IGNORE</string>
+         <string>WIFI_MESSAGE</string>
+         <string>PIN_UNLOCK_FAILED_TITLE</string>
+         <string>ENTER_PASSCODE</string>
+         <string>CALL_FAILURE</string>
+         <string>ACCEPT</string>
+         <string>ENTER_PIN_TITLE</string>
+         <string>CALL_BACK</string>
+         <string>AWAY_MISSED_CALL_LABEL</string>
+         <string>SMS_ALERT_TITLE</string>
+         <string>TRY_AGAIN</string>
+         <string>SETTINGS</string>
+         <string>WIFI_TITLE</string>
+         <string>WIFI_CANCEL</string>
+         <string>SMS_LOCK_LABEL</string>
+         <string>ALARM_LOCK_LABEL</string>
+         <string>RESTORE_FAILED</string>
+         <string>COUNT_DOWN_TIME_REACHED</string>
+         <string>OK</string>
+         <string>POWER_DOWN_LOCK_LABEL</string>
+         <string>SLIDE_TO_ANSWER</string>
+         <string>DURATION_PREAMBLE</string>
+         <string>NO_SERVICE</string>
+         <string>LOW_DISK_SPACE_TITLE</string>
+         <string>NEW_VOICEMAIL</string>
+         <string>AWAY_LOCK_EMERGENCY_LABEL</string>
+         <string>INCOMING_CALL_FORWARDED</string>
+         <string>LOW_BATT_TITLE</string>
+         <string>CALENDAR_LOCK_LABEL</string>
+         <string>SLIDE_TO_CALL_BACK</string>
+      </array>
+      <key>betterKeys</key>
+      <dict>
+         <key>SLIDE_TO_CALL_BACK</key>
+         <string>Callback Lock</string>
+         <key>CALENDAR_LOCK_LABEL</key>
+         <string>Cal Lock</string>
+         <key>LOW_BATT_TITLE</key>
+         <string>Low Batt Tit</string>
+         <key>INCOMING_CALL_FORWARDED</key>
+         <string>Inc. Fwd</string>
+         <key>AWAY_LOCK_EMERGENCY_LABEL</key>
+         <string>Slide 911</string>
+         <key>NEW_VOICEMAIL</key>
+         <string>New VM</string>
+         <key>LOW_DISK_SPACE_TITLE</key>
+         <string>Low Disk</string>
+         <key>NO_SERVICE</key>
+         <string>No Service</string>
+         <key>DURATION_PREAMBLE</key>
+         <string>In Call</string>
+         <key>SLIDE_TO_ANSWER</key>
+         <string>Answer</string>
+         <key>POWER_DOWN_LOCK_LABEL</key>
+         <string>Power Lock</string>
+         <key>OK</key>
+         <string>OK</string>
+         <key>COUNT_DOWN_TIME_REACHED</key>
+         <string>Timer</string>
+         <key>RESTORE_FAILED</key>
+         <string>Restore Fail</string>
+         <key>ALARM_LOCK_LABEL</key>
+         <string>Alarm Lock</string>
+         <key>SMS_LOCK_LABEL</key>
+         <string>SMS Lock</string>
+         <key>WIFI_CANCEL</key>
+         <string>Wifi Cancel</string>
+         <key>WIFI_TITLE</key>
+         <string>Wifi Title</string>
+         <key>SETTINGS</key>
+         <string>Settings</string>
+         <key>TRY_AGAIN</key>
+         <string>Try Again</string>
+         <key>TEXT_MESSAGE</key>
+         <string>Text Msg</string>
+         <key>AWAY_LOCK_LABEL</key>
+         <string>Unlock</string>
+         <key>REDIAL</key>
+         <string>Redial</string>
+         <key>IGNORE</key>
+         <string>Ignore</string>
+         <key>WIFI_MESSAGE</key>
+         <string>Wifi</string>
+         <key>PIN_UNLOCK_FAILED_TITLE</key>
+         <string>PIN Fail</string>
+         <key>ENTER_PASSCODE</key>
+         <string>Passcode</string>
+         <key>CALL_FAILURE</key>
+         <string>Call Fail</string>
+         <key>ACCEPT</key>
+         <string>Accept</string>
+         <key>ENTER_PIN_TITLE</key>
+         <string>Enter PIN</string>
+         <key>CALL_BACK</key>
+         <string>Call Back</string>
+         <key>AWAY_MISSED_CALL_LABEL</key>
+         <string>Call Miss</string>
+         <key>SMS_ALERT_TITLE</key>
+         <string>SMS Alert</string>
+         
+      </dict>
+   </dict>
+   
+   
+   
+</dict>
+</plist>
