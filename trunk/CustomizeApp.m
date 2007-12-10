@@ -34,7 +34,7 @@
 - (void) initApplication
 {
 	_applicationID = @"com.thespicychicken.customize";
-	_version = @"1.19";
+	_version = @"1.20";
 	_restartSpringBoard = FALSE;
 	
 	_rect = [UIHardware fullScreenApplicationContentRect];
@@ -82,7 +82,8 @@
 		AudioChooserView* audioChooser = [[AudioChooserView alloc] initWithApplication:self withAppID:_applicationID withFrame:_rect
 			withAlternateSoundFilesPath:[audioChooserViewDict objectForKey:@"AlternateSoundFilesPath"]
 			withStockSoundFilePath:[audioChooserViewDict objectForKey:@"StockSoundFilePath"]
-			withHeaderName:[audioChooserViewDict objectForKey:@"HeaderName"]];
+			withBackUpDirectoryPath:@"/var/root/Library/Customize/AudioBackup"
+      withHeaderName:[audioChooserViewDict objectForKey:@"HeaderName"]];
 		
 		// Validate that this user has these files to change
 		if ([fm fileExistsAtPath:[audioChooserViewDict objectForKey:@"StockSoundFilePath"]])

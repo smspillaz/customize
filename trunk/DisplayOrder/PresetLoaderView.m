@@ -87,7 +87,7 @@
   
   // Add the title cell for the first group
   cell = [[CSPreferencesTableCell alloc] init];
-  [cell setTitle:@"Settings"];
+  [cell setTitle:@"Custom"];
 	[cell setEnabled:NO];
   [[_prefCells objectAtIndex:([_prefCells count]-1)] addObject: cell];
   
@@ -106,7 +106,7 @@
   
   // Add the title cell for the first group
   cell = [[CSPreferencesTableCell alloc] init];
-  [cell setTitle:@"Custom"];
+  [cell setTitle:@"Settings"];
 	[cell setEnabled:NO];
   [[_prefCells objectAtIndex:([_prefCells count]-1)] addObject: cell];
   

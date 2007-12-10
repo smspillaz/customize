@@ -156,7 +156,7 @@
 
 - (int)table:(UISectionTable *)table movedRow:(int)row toRow:(int)toRow
 {
-	if (row < [_appObjects count])
+	if (row < [_appObjects count] && toRow < [_appObjects count])
 	{
 		NSLog(@"Exchanging row %i for row %i",row,toRow);
 		AppObject* app = [_appObjects objectAtIndex:row];

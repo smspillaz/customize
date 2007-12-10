@@ -291,7 +291,7 @@
 		{
 			// We want index to match position, if it does not we swap them
 			// to get this identifier into the correct order
-			if (position != index)
+			if (position != index && position < [_appObjects count])
 			{
 				[_appObjects exchangeObjectAtIndex:position withObjectAtIndex:index];
 			}
@@ -315,7 +315,7 @@
 		{
 			// We want index to match position, if it does not we swap them
 			// to get this identifier into the correct order
-			if (position != index)
+			if (position != index && position < [_appObjects count])
 			{
 				[_appObjects exchangeObjectAtIndex:position withObjectAtIndex:index];
 			}
@@ -362,78 +362,83 @@
 		//NSLog(@"");
 		
 		[dirEnumerator skipDescendents];
+    if ([[filename pathExtension] isEqualToString:@"app"])
+    {
+      
+      // Pull app information from the plist
+  		NSString* infoPlistPath = [[NSString alloc] initWithFormat:@"/Applications/%@/Info.plist",filename];
+  		NSDictionary* infoPlistDict = [NSDictionary dictionaryWithContentsOfFile: infoPlistPath];
+
+  		NSString* appPath = [[NSString alloc] initWithFormat:@"/Applications/%@",filename];
+  		// Check if this is an app that has more than one "role"
+  		// meaning the same app can have multiple icons and functions
+  		if ([self dictionary:infoPlistDict hasKey:@"UIRoleInfo"])
+  		{
+  			//NSLog(@"%@ has Multiple Roles",filename);
+
+  			NSString* baseIdentifier = [infoPlistDict objectForKey:@"CFBundleIdentifier"];
+  			NSArray* roles;
+  			// TODO: Have this check for the actual platform name, rather than simply using the index.
+  			if ([_deviceInfo isIphone]) roles = [[[infoPlistDict objectForKey:@"UIRoleInfo"] objectAtIndex:0] objectForKey:@"Roles"];
+  			else roles = [[[infoPlistDict objectForKey:@"UIRoleInfo"] objectAtIndex:1] objectForKey:@"Roles"];
+
+  			int i;
+  			for(i=0;i<[roles count];i++)
+  			{
+
+  				NSString* name = [[roles objectAtIndex:i] objectForKey:@"UIRoleDisplayName"];
+  				NSString*	idExtension = [[roles objectAtIndex:i] objectForKey:@"Role"];
+  				NSString* identifier = [[NSString alloc] initWithFormat:@"%@-%@",baseIdentifier,idExtension];
+  				NSString* iconPath = [[NSString alloc] initWithFormat:@"/Applications/%@/icon-%@.png",filename,idExtension];
+
+  				// Create the app object and add to array
+  				AppObject* appObject = [[AppObject alloc] initWithPath:appPath withName:name withIconPath:iconPath 
+  					withIdentifier:identifier isHidden:NO withDisplayOrderView:self];
+  				[_appObjects addObject:appObject];
+  				//NSLog(@"(%@,%@,%@,%@)",appPath,name,iconPath,identifier);
+  			}
+
+  		} else {
+  			//NSLog(@"%@ has only one role",filename);
+
+  			// Set the app identifier
+  			NSString* identifier = [[NSString alloc] initWithFormat:@"%@",[infoPlistDict objectForKey:@"CFBundleIdentifier"]];
+
+  			// Apple uses SBDemoRole to override the app name, we check for that first
+  			// Otherwise we use the trimmed down app name in CFBundleExecutable
+  			NSString* name;
+  			if ([self dictionary:infoPlistDict hasKey:@"SBDemoRole"])
+  			{
+  				name = [infoPlistDict objectForKey:@"SBDemoRole"];
+  			} else {
+  				// This was a nice idea, but just wasn't working, noone observed this convention
+  				// TODO: Make all names very nice
+  				//name = [infoPlistDict objectForKey:@"CFBundleExecutable"];
+  				name = [self niceNameFor:[filename stringByDeletingPathExtension]];
+  			}
+  			// Set the app IconPath, default for this single role app
+  			NSString* iconPath = [[NSString alloc] initWithFormat:@"/Applications/%@/icon.png",filename];
+
+  			// Create the app object and add to array
+  			AppObject* appObject = [[AppObject alloc] initWithPath:appPath withName:name withIconPath:iconPath 
+  				withIdentifier:identifier isHidden:NO withDisplayOrderView:self];
+  			[_appObjects addObject:appObject];
+  			//NSLog(@"(%@,%@,%@,%@)",appPath,name,iconPath,identifier);
+  		}
+
+  		/*
+  		// Go through all the keys are display the key/value pairs
+  		NSEnumerator* infoEnumerator = [infoPlistDict keyEnumerator];
+  		NSString* key;
+  		while ((key = [infoEnumerator nextObject])) {
+  			NSLog(@"%@ = %@",key,[infoPlistDict objectForKey:key]);
+  		}
+  		*/
+  		
+    } /* end check if pathExtension is equal to app */
 		
-		// Pull app information from the plist
-		NSString* infoPlistPath = [[NSString alloc] initWithFormat:@"/Applications/%@/Info.plist",filename];
-		NSDictionary* infoPlistDict = [NSDictionary dictionaryWithContentsOfFile: infoPlistPath];
 		
-		NSString* appPath = [[NSString alloc] initWithFormat:@"/Applications/%@",filename];
-		// Check if this is an app that has more than one "role"
-		// meaning the same app can have multiple icons and functions
-		if ([self dictionary:infoPlistDict hasKey:@"UIRoleInfo"])
-		{
-			//NSLog(@"%@ has Multiple Roles",filename);
-			
-			NSString* baseIdentifier = [infoPlistDict objectForKey:@"CFBundleIdentifier"];
-			NSArray* roles;
-			// TODO: Have this check for the actual platform name, rather than simply using the index.
-			if ([_deviceInfo isIphone]) roles = [[[infoPlistDict objectForKey:@"UIRoleInfo"] objectAtIndex:0] objectForKey:@"Roles"];
-			else roles = [[[infoPlistDict objectForKey:@"UIRoleInfo"] objectAtIndex:1] objectForKey:@"Roles"];
-			
-			int i;
-			for(i=0;i<[roles count];i++)
-			{
-				
-				NSString* name = [[roles objectAtIndex:i] objectForKey:@"UIRoleDisplayName"];
-				NSString*	idExtension = [[roles objectAtIndex:i] objectForKey:@"Role"];
-				NSString* identifier = [[NSString alloc] initWithFormat:@"%@-%@",baseIdentifier,idExtension];
-				NSString* iconPath = [[NSString alloc] initWithFormat:@"/Applications/%@/icon-%@.png",filename,idExtension];
-				
-				// Create the app object and add to array
-				AppObject* appObject = [[AppObject alloc] initWithPath:appPath withName:name withIconPath:iconPath 
-					withIdentifier:identifier isHidden:NO withDisplayOrderView:self];
-				[_appObjects addObject:appObject];
-				//NSLog(@"(%@,%@,%@,%@)",appPath,name,iconPath,identifier);
-			}
-			
-		} else {
-			//NSLog(@"%@ has only one role",filename);
-			
-			// Set the app identifier
-			NSString* identifier = [[NSString alloc] initWithFormat:@"%@",[infoPlistDict objectForKey:@"CFBundleIdentifier"]];
-			
-			// Apple uses SBDemoRole to override the app name, we check for that first
-			// Otherwise we use the trimmed down app name in CFBundleExecutable
-			NSString* name;
-			if ([self dictionary:infoPlistDict hasKey:@"SBDemoRole"])
-			{
-				name = [infoPlistDict objectForKey:@"SBDemoRole"];
-			} else {
-				// This was a nice idea, but just wasn't working, noone observed this convention
-				// TODO: Make all names very nice
-				//name = [infoPlistDict objectForKey:@"CFBundleExecutable"];
-				name = [self niceNameFor:[filename stringByDeletingPathExtension]];
-			}
-			// Set the app IconPath, default for this single role app
-			NSString* iconPath = [[NSString alloc] initWithFormat:@"/Applications/%@/icon.png",filename];
-			
-			// Create the app object and add to array
-			AppObject* appObject = [[AppObject alloc] initWithPath:appPath withName:name withIconPath:iconPath 
-				withIdentifier:identifier isHidden:NO withDisplayOrderView:self];
-			[_appObjects addObject:appObject];
-			//NSLog(@"(%@,%@,%@,%@)",appPath,name,iconPath,identifier);
-		}
-		
-		/*
-		// Go through all the keys are display the key/value pairs
-		NSEnumerator* infoEnumerator = [infoPlistDict keyEnumerator];
-		NSString* key;
-		while ((key = [infoEnumerator nextObject])) {
-			NSLog(@"%@ = %@",key,[infoPlistDict objectForKey:key]);
-		}
-		*/
-		
-	}
+	} /* end while loop through files in dir */
 	
 }
 
