@@ -33,6 +33,7 @@
 	CGRect					_rect;
 	NSString*				_altSoundFilesPath;			// path to directory containing alternate images
 	NSString*				_stockSoundFilePath; 		// holds the stock image paths for where SB looks for these
+  NSString*       _backUpDirectoryPath;   // path to the back up file
 	bool						_tableBuilt;
 	
 	AVController*			_avc;
@@ -43,6 +44,7 @@
 - (id) initWithApplication: (UIApplication*)app withAppID: (NSString*)appID withFrame: (struct CGRect)rect
 	withAlternateSoundFilesPath:(NSString*)altSoundFilesPath 
 	withStockSoundFilePath:(NSString*)stockSoundFilePath
+	withBackUpDirectoryPath:(NSString*)backUpDirectoryPath
 	withHeaderName:(NSString*)headerName;
 - (void) playFile:(NSString*)filepath;
 - (void) buildPreferencesTable;

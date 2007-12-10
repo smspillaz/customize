@@ -39,6 +39,7 @@
 - (id) initWithApplication: (UIApplication*)app withAppID: (NSString*)appID withFrame: (struct CGRect)rect
 	withAlternateSoundFilesPath:(NSString*)altSoundFilesPath 
 	withStockSoundFilePath:(NSString*)stockSoundFilePath
+	withBackUpDirectoryPath:(NSString*)backUpDirectoryPath
 	withHeaderName:(NSString*)headerName
 {
 	_rect = rect;
@@ -52,7 +53,8 @@
 	// set up globals
 	_altSoundFilesPath = altSoundFilesPath;
 	_stockSoundFilePath = stockSoundFilePath;
-	
+  _backUpDirectoryPath = backUpDirectoryPath;
+  
 	// Setup _mainView
 	UIView* mainView = [[UIView alloc] initWithFrame: rect];
 	
@@ -148,7 +150,9 @@
 	[cell setShowDisclosure:NO];
 	[cell setCellOutline:1];
 	[cell setAsDefault];
-	[cell setFilepath:[[NSString alloc] initWithFormat:@"%@.bu",_stockSoundFilePath]];
+  NSString *backUpFilePath = [[NSString alloc] initWithFormat:@"%@/%@",_backUpDirectoryPath,[_stockSoundFilePath lastPathComponent]];
+  NSLog(@"Setting backup file path to %@",backUpFilePath);
+	[cell setFilepath:backUpFilePath];
 	[[_prefCells objectAtIndex:([_prefCells count]-1)] addObject: cell];
 	
 	[fm changeCurrentDirectoryPath: _altSoundFilesPath];
@@ -217,21 +221,16 @@
 
 - (int)preferencesTable:(UIPreferencesTable*)aTable numberOfRowsInGroup:(int)group
 {
-	NSLog(@"calling for number of rows in group: %i",group);
-	
 	return [[_prefCells objectAtIndex:group] count];
 }
 
 - (AudioTableCell*)preferencesTable:(UIPreferencesTable*)aTable cellForGroup:(int)group
 {
-	NSLog(@"Calling for cell for group: %i",group);
-	
 	return Nil;
 }
 
 - (float)preferencesTable:(UIPreferencesTable*)aTable heightForRow:(int)row inGroup:(int)group withProposedHeight:(float)proposed
 {
-	NSLog(@"Proposed: %f",proposed);
 	if ([[[_prefCells objectAtIndex:group] objectAtIndex:0] isHeader])
 		return 20.0f;
 	else return proposed;
@@ -239,20 +238,19 @@
 
 - (BOOL)preferencesTable:(UIPreferencesTable*)aTable isLabelGroup:(int)group
 {
-	NSLog(@"isLabelGroup? %i",group);
+	//NSLog(@"isLabelGroup? %i",group);
 	return [[[_prefCells objectAtIndex:group] objectAtIndex:0] isHeader];
 }
 
 - (AudioTableCell*)preferencesTable:(UIPreferencesTable*)aTable cellForRow:(int)row inGroup:(int)group
 {
-	NSLog(@"Calling for cell for row: %i in group: %i",row,group);
-	
+	//NSLog(@"Calling for cell for row: %i in group: %i",row,group);
 	return [[_prefCells objectAtIndex:group] objectAtIndex:row];
 }
 
 - (void) tableRowSelected: (NSNotification*) notification 
 {
-	NSLog(@"Selected : %i", [_table selectedRow]);
+	//NSLog(@"Selected : %i", [_table selectedRow]);
 	int i,j,group,row,c;
 	c = 1;
 	
@@ -275,7 +273,7 @@
 		NSString* filepath = [[[_prefCells objectAtIndex:group] objectAtIndex:row] getFilepath];
 		NSLog(@"Found group,row %i,%i with filepath %@",group,row, filepath);
 
-		if (![[[_prefCells objectAtIndex:group] objectAtIndex:row] isDefault])
+		//if (![[[_prefCells objectAtIndex:group] objectAtIndex:row] isDefault])
 			[self playFile:filepath];
 
 		[self unCheckAllCells];

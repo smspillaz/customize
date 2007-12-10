@@ -19,7 +19,7 @@ nice:
 		rm -f *.o
 
 clean:
-		rm -f *.o Customize
+		rm -f *.o DisplayOrder/*.o Customize
 
 package: all
 	mv Customize CustomizeApp/

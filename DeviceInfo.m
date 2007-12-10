@@ -5,6 +5,9 @@
  * Represents an iphone/ipod
 **/
 
+#import <Foundation/Foundation.h>
+#import <CoreFoundation/CoreFoundation.h>
+#import <UIKit/CDStructures.h>
 #import <UIKit/UIHardware.h>
 #import "DeviceInfo.h"
 
@@ -17,7 +20,16 @@
 	NSString *firmware = [[[NSProcessInfo processInfo] operatingSystemVersionString] substringWithRange:NSMakeRange(8,5)];
 	NSLog(@"OS: %@",firmware);
 	
-	NSString *platform = [UIHardware deviceName];
+  NSString *platform;
+  
+  @try {
+    platform = [UIHardware deviceName];
+  }
+	@catch (NSException *e) {
+    NSLog(@"User must be running firmware 1.0.2, cannot detect platform directly, setting to default, iPhone");
+    platform = @"iPhone";
+	}
+	
 	NSLog(@"Platform %@",platform);
 		
 	if (firmware && platform) {
